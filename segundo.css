@@ -1,4 +1,4 @@
-
+/* Estilo geral do corpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +7,38 @@ body {
     color: #333;
 }
 
+/* Estilo da barra de navegação */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Estilo do conteúdo principal */
 .container {
     text-align: center;
     padding: 20px;
@@ -16,7 +48,6 @@ h1 {
     color: #333;
     margin-bottom: 20px;
 }
-
 
 .developers {
     display: flex;
@@ -32,11 +63,9 @@ h1 {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
 }
 
 .developer:hover {
-    
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,17 +82,20 @@ h3 {
 }
 
 p {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 0.9em;
 }
+
+/* Estilo do rodapé */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0; 
-    position: relative; 
+    padding: 20px 0;
+    position: relative;
     margin-top: 20px;
 }
+
 footer ul {
     list-style-type: none;
     padding: 0;

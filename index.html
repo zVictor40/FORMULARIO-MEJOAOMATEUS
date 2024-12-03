@@ -4,25 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIOCARTAO</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Cadastro de Cartão</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Formulário se ta tudo certo com o seu cartão</h1>
+        <h1>Verifique as Informações do Seu Cartão</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="dados.php">Enviar Dados</a></li>
-                <li><a href="segundo.html">Desenvolvedores</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="dados.php">Enviar Meus Dados</a></li>
+                <li><a href="segundo.html">Sobre os Desenvolvedores</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <form action="concluido-cadastro.html" method="post">
-            
             <label for="nome">Nome Completo:</label>
             <input type="text" id="nome" name="nome" required><br>
 
@@ -50,12 +49,17 @@
             <label for="aceitar_termos">Aceito os Termos e Condições:</label>
             <input type="checkbox" id="aceitar_termos" name="aceitar_termos" required><br>
 
+            <label for="receber_promocoes">Gostaria de receber promoções?</label>
+            <input type="checkbox" id="receber_promocoes" name="receber_promocoes"><br>
+
             <label for="arquivo">Upload da sua Identidade:</label>
             <input type="file" id="arquivo" name="arquivo"><br>
 
-            <label for="quantidade">Qualidade do nosso serviço: </label>
+            <label for="quantidade">Qualidade do nosso serviço: (0 a 10)</label>
             <input type="range" id="quantidade" name="quantidade" min="1" max="10"><br>
 
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required><br>
 
             <input type="reset" value="Resetar">
             <input type="submit" value="Cadastrar">
@@ -69,7 +73,7 @@
         <p>Integrantes do Grupo:</p>
         <ul>
             <li>João Victor Ferreira do Nascimento</li>
-            <li>Mates Ribeiro Almeida</li>
+            <li>Mateus Ribeiro Almeida</li>
         </ul>
     </footer>
 </body>
